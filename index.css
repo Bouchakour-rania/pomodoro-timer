@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+body.work-time {
+    background-color: #ff6b6b; /* Rouge pendant le travail */
+}
+
+body.break-time {
+    background-color: #4ecdc4; /* Vert pendant la pause */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.timer-display {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #333;
+    font-family: 'Courier New', monospace;
+}
+
+.progress-container {
+    width: 100%;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #ff6b6b;
+    transition: width 1s linear;
+    border-radius: 12px;
+}
+
+.controls {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #333;
+    color: white;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#start-btn {
+    background-color: #2ecc71;
+}
+
+#pause-btn {
+    background-color: #f39c12;
+}
+
+#reset-btn {
+    background-color: #e74c3c;
+}
+
+.cycles {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .timer-display {
+        font-size: 3.5rem;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
