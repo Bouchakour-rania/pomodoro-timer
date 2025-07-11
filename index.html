@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minuteur Pomodoro | Votre Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Technique Pomodoro</h1>
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="controls">
+            <button id="start-btn">Démarrer</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Réinitialiser</button>
+        </div>
+        <div class="cycles">
+            <p>Cycles terminés : <span id="cycle-count">0</span>/4</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
